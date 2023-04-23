@@ -269,13 +269,13 @@ a.menu-link { display: none; }
 }
 
 .main-menu li .sub-menu li a:hover {
-    color: #f5a425;
+    color: #24EA09;
     border: none;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    border: 2px solid #f5a425;
+    border: 2px solid #24EA09;
 }
 
 @media (max-width: 950px) {

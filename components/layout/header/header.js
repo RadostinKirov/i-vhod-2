@@ -1,58 +1,45 @@
+import Image from "next/image";
 
 const Header = () => {
 
     return (
         <header className="main-header clearfix" role="header">
-            <div className="logo">
-                <a href="#">
-                    <em>Grad</em> School
+            <div className="header-wrapper">
+                <div className="logo">
+                    <a href="#">
+                        <Image
+                            src="/logo/logo_transparent_3.png"
+                            width={160}
+                            height={80}
+                        />
+                    </a>
+                </div>
+                <a href="#menu" className="menu-link">
+                    <i className="fa fa-bars" />
                 </a>
+                <nav id="menu" className="main-nav" role="navigation">
+                    <ul className="main-menu">
+                        <li>
+                            <a href="#section1">Начало</a>
+                        </li>
+                        <li 
+                        //</ul>className="has-submenu"
+                        >
+                            <a href="#section2">Каса</a>
+                        </li>
+                        <li>
+                            <a href="#section4">Дейности</a>
+                        </li>
+                        <li>
+                            <a href="#section6">Съобщения</a>
+                        </li>
+                        <li>
+                            <a href="#section6">Контакти</a>
+                        </li>
+
+                    </ul>
+                </nav>
             </div>
-            <a href="#menu" className="menu-link">
-                <i className="fa fa-bars" />
-            </a>
-            <nav id="menu" className="main-nav" role="navigation">
-                <ul className="main-menu">
-                    <li>
-                        <a href="#section1">Home</a>
-                    </li>
-                    <li className="has-submenu">
-                        <a href="#section2">About Us</a>
-                        <ul className="sub-menu">
-                            <li>
-                                <a href="#section2">Who we are?</a>
-                            </li>
-                            <li>
-                                <a href="#section3">What we do?</a>
-                            </li>
-                            <li>
-                                <a href="#section3">How it works?</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://templatemo.com/about"
-                                    rel="sponsored"
-                                    className="external"
-                                >
-                                    External URL
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#section4">Courses</a>
-                    </li>
-                    {/* <li><a href="#section5">Video</a></li> */}
-                    <li>
-                        <a href="#section6">Contact</a>
-                    </li>
-                    <li>
-                        <a href="https://templatemo.com" className="external">
-                            External
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </header>
 
     )
