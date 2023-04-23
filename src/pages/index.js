@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
+import Footer from '../../components/layout/footer/footer'
+import Header from '../../components/layout/header/header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -7,84 +9,11 @@ export default function Home() {
   return (
 
     <>
-      <Head>
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
-          rel="stylesheet"
-        />
-        <title>Grad School HTML5 Template</title>
-        {/* Bootstrap core CSS */}
-        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-        {/* Additional CSS Files */}
-        <link rel="stylesheet" href="/css/fontawesome.css" />
-        <link rel="stylesheet" href="/css/templatemo-grad-school.css" />
-        <link rel="stylesheet" href="/css/owl.css" />
-        <link rel="stylesheet" href="/css/lightbox.css" />
-      </Head>
+        <div className="main-container">
 
-      <div className="main-container">
+              {/* ***** Main Banner Area Start ***** */}
 
-        {/*header*/}
-        <header className="main-header clearfix" role="header">
-          <div className="logo">
-            <a href="#">
-              <em>Grad</em> School
-            </a>
-          </div>
-          <a href="#menu" className="menu-link">
-            <i className="fa fa-bars" />
-          </a>
-          <nav id="menu" className="main-nav" role="navigation">
-            <ul className="main-menu">
-              <li>
-                <a href="#section1">Home</a>
-              </li>
-              <li className="has-submenu">
-                <a href="#section2">About Us</a>
-                <ul className="sub-menu">
-                  <li>
-                    <a href="#section2">Who we are?</a>
-                  </li>
-                  <li>
-                    <a href="#section3">What we do?</a>
-                  </li>
-                  <li>
-                    <a href="#section3">How it works?</a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://templatemo.com/about"
-                      rel="sponsored"
-                      className="external"
-                    >
-                      External URL
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#section4">Courses</a>
-              </li>
-              {/* <li><a href="#section5">Video</a></li> */}
-              <li>
-                <a href="#section6">Contact</a>
-              </li>
-              <li>
-                <a href="https://templatemo.com" className="external">
-                  External
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        {/* ***** Main Banner Area Start ***** */}
+
         <section className="section main-banner" id="top" data-section="section1">
           <video autoPlay="" muted="" loop="" id="bg-video">
             <source src="assets/images/course-video.mp4" type="video/mp4" />
@@ -721,25 +650,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <footer>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <p>
-                  <i className="fa fa-copyright" /> Copyright 2020 by Grad School |
-                  Design:{" "}
-                  <a href="https://templatemo.com" rel="sponsored" target="_parent">
-                    TemplateMo
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </footer>
-        {/* Scripts */}
-        {/* Bootstrap core JavaScript */}
 
-      </div>
+            </div>
     </>
 
   )
